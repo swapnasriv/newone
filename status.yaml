@@ -1,0 +1,10 @@
+-
+  name: Start Services
+  hosts: all
+
+  become: true
+  tasks:
+    - name: Start Services
+      service:
+       name: httpd
+       state: started

@@ -1,0 +1,7 @@
+---
+playbook to install httpd
+  - name: install httpd on localhost
+    host: localhost
+    tasks:
+    - name: first task
+      service: name=httpd enabled=true

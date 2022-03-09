@@ -1,0 +1,2 @@
+- name: check redis status
+  shell: service redis-service status

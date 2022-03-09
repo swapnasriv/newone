@@ -1,0 +1,11 @@
+---
+  - name: variabledisplay
+    hosts: localhost
+    become: true
+    gather_facts: no   
+    tasks:
+      - name: display_variable_in_message
+        debug:
+          msg: "This cafe is famous for {{coffee}}"
+        vars:
+          coffee: Cappuccino
