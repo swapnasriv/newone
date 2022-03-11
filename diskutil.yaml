@@ -1,0 +1,11 @@
+---
+- name: disk util info
+  hosts: all
+  become: true
+  tasks:
+    - name: diskfilesystem command
+      command: df -h
+      register: use
+    - debug:
+        var: use
+

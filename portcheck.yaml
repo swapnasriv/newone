@@ -1,0 +1,7 @@
+---
+- name: portcheck
+ - hosts: target.host
+   tasks:  
+     - wait_for: host=remote.host  port=8080 timeout=1
+     - debug: msg=ok
+

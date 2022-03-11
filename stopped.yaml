@@ -1,0 +1,11 @@
+
+-
+  name: Stop Services
+  hosts: all
+
+  become: true
+  tasks:
+    - name: Stop Services
+      service:
+       name: httpd
+       state: stopped

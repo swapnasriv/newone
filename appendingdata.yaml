@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+    - name: to insert line 
+      lineinfile:
+        path: /root/ansible/new
+        line: last
+

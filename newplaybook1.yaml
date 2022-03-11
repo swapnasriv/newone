@@ -1,0 +1,12 @@
+---
+  - name: install httpd on localhost
+    hosts: all
+    tasks:
+      - name: first task
+        service:
+          name: httpd
+          state: started
+      - name: enable httpd
+        service:
+           name: httpd
+           enabled: yes
